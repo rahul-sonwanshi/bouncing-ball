@@ -1,7 +1,7 @@
 $bg-color: #36A2EB;
 $slider-height: 7px;
 
-
+//slider appearance
 .slider {
     -webkit-appearance: none;
     width: 40%;
@@ -13,9 +13,10 @@ $slider-height: 7px;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
-  
-  .slider::-webkit-slider-thumb {
+}
+
+//chrome support
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
@@ -23,12 +24,13 @@ $slider-height: 7px;
     border-radius: 50%; 
     background: $bg-color;
     cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
+}
+
+//firefox support
+.slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background: $bg-color;
     cursor: pointer;
-  }
+}

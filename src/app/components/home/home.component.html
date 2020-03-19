@@ -13,5 +13,6 @@
 <div class="slidecontainer">
     <h5 style="display: block; margin-left: 20px;">Coefficient of restitution {{ ecoeff/100 }}</h5>
     <input type="range" [(ngModel)]="ecoeff" min="5" max="95" class="slider" id="myRange" (change)="newPlot()">
+    <h5 style="display: block; margin-left: 20px;">Total Bounces : {{ bounces }}</h5>
     <!-- Don't want the browser to get stuck in infinite loop hence limit on min and max -->
 </div>
